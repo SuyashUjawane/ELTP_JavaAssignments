@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-01-18T14:39:59.661929400Z</date>
+  <millis>1610980799661</millis>
+  <nanos>929400</nanos>
+  <sequence>0</sequence>
+  <logger>com.psl.training.util.Calculator</logger>
+  <level>SEVERE</level>
+  <class>com.psl.training.util.Calculator</class>
+  <method>divide</method>
+  <thread>1</thread>
+  <message> Alert! Divide by Zero </message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-01-18T14:43:08.066866Z</date>
+  <millis>1610980988066</millis>
+  <nanos>866000</nanos>
+  <sequence>0</sequence>
+  <logger>com.psl.training.util.Calculator</logger>
+  <level>INFO</level>
+  <class>com.psl.training.util.Calculator</class>
+  <method>divide</method>
+  <thread>1</thread>
+  <message> Exception occuredjava.lang.ArithmeticException: / by zero</message>
+</record>
+</log>

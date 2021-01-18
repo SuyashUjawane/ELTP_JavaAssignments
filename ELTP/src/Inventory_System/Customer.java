@@ -68,8 +68,5 @@ public class Customer {
 				bill+=purchaseOrder.calculateBill();
 			}
 			System.out.println("Total Bill:"+bill);
-		}
-	
-	
-	
+		}	
 }
