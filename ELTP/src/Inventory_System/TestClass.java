@@ -1,6 +1,5 @@
 package Inventory_System;
 
-
 public class TestClass {
 	public static void main(String[] args) {
 		Customer c1 = new Customer(101,"Jamie");
