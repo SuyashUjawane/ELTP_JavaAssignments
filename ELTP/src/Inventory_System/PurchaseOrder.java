@@ -1,15 +1,17 @@
 package Inventory_System;
+
+import java.time.LocalDate;
 import java.util.Date;
 
 
 public class PurchaseOrder {
 	private int poNumber;
-	private Date orderDate = new Date();
-	private Date shipDate = new Date();
+	private LocalDate orderDate;
+	private LocalDate shipDate;
 	private OrderItem [] oi;
 	private int sum;
 	
-	public void create(int pono,Date orderDt) {
+	public void create(int pono,LocalDate orderDt) {
 		this.poNumber=pono;
 		this.orderDate=orderDt;		
 	}
@@ -18,7 +20,7 @@ public class PurchaseOrder {
 		this.oi=arr1;		
 	}
 	
-	public void setShipDate(Date date) {
+	public void setShipDate(LocalDate date) {
 		shipDate=date;
 	}
 

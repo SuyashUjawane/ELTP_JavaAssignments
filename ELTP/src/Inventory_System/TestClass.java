@@ -1,4 +1,6 @@
 package Inventory_System;
+import java.time.LocalDate;
+
 
 public class TestClass {
 	public static void main(String[] args) {
@@ -31,8 +33,8 @@ public class TestClass {
 		
 		//first Purchase
 		PurchaseOrder P1=new PurchaseOrder();
-		P1.create(101,new java.util.Date(System.currentTimeMillis()));
-		P1.setShipDate(new java.util.Date(System.currentTimeMillis()));
+		P1.create(101,java.time.LocalDate.now());
+		P1.setShipDate(java.time.LocalDate.now().plusDays(1));
 		OrderItem type1[] = new OrderItem[3];
 		type1[0] = new OrderItem(2,s1);
 		type1[1] = new OrderItem(2,s2);
@@ -41,8 +43,8 @@ public class TestClass {
 	
 		//Second Purchase
 		PurchaseOrder P2=new PurchaseOrder();
-		P2.create(102,new java.util.Date(System.currentTimeMillis()));
-		P2.setShipDate(new java.util.Date(System.currentTimeMillis()));
+		P2.create(102,java.time.LocalDate.now());
+		P2.setShipDate(java.time.LocalDate.now().plusDays(1));
 		OrderItem type2[] = new OrderItem[2];
 		type2[0] = new OrderItem(5,s4);
 		type2[1] = new OrderItem(10,s5);	
@@ -50,8 +52,8 @@ public class TestClass {
 		
 		//Third Purchase
 		PurchaseOrder P3=new PurchaseOrder();
-		P3.create(103,new java.util.Date(System.currentTimeMillis()));
-		P3.setShipDate(new java.util.Date(System.currentTimeMillis()));
+		P3.create(103,java.time.LocalDate.now());
+		P3.setShipDate(java.time.LocalDate.now().plusDays(1));
 		OrderItem type3[] = new OrderItem[2];
 		type3[0] = new OrderItem(5,s2);
 		type3[1] = new OrderItem(10,s4);	
@@ -90,5 +92,10 @@ public class TestClass {
 	//	System.out.println("Invoice of Customer3");
 	//	c3.CustomerInvoice();
 		
+	}
+
+	private static LocalDate LocalDate() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
